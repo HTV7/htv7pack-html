@@ -1,8 +1,8 @@
 <html>
 <head>
     <title>HTV7pack | Home</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
 <header>
