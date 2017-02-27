@@ -8,19 +8,59 @@
 <header>
     <div class="wrapper">
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/download/">Download</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
+            <div class="nav-content">
+                <button class="nav-btn" id="active"><a href="#">home</a></button>
+            </div>
+            <div class="nav-content">
+                <button class="nav-btn"><a>stuff</a></button>
+                <div class="dropdown-content">
+                    <a href="#">modpack</a>
+                </div>
+            </div>
+            <div class="nav-content">
+                <button class="nav-btn"><a href="#">about</a></button>
+            </div>
+            <div class="nav-content">
+                <button class="nav-btn"><a href="#">contact</a></button>
+            </div>
         </nav>
     </div>
 </header>
 <div class="header-pusher"></div>
 <section>
     <div class="wrapper">
-        
+        <div class="news-feed">
+            <article>
+                <a href=""><h3>HTV7 Modpack</h3>
+                <p>We have made a Minecraft Modpack</p></a>
+            </article>
+            <div class="news-list">
+                <div class="news-item" >
+                    <a href=""><p></p></a>
+                    <span class="badge"></span>
+                </div>
+                <div class="news-item" >
+                    <a href=""><p></p></a>
+                    <span class="badge"></span>
+                </div>
+                <div class="news-item" >
+                    <a href=""><p></p></a>
+                    <span class="badge"></span>
+                </div>
+                <div class="news-item" >
+                    <a href=""><p></p></a>
+                    <span class="badge"></span>
+                </div>
+                <div class="news-item" >
+                    <a href=""><p></p></a>
+                    <span class="badge"></span>
+                </div>
+                <div class="news-item" >
+                    <a href=""><p></p></a>
+                    <span class="badge"></span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <footer>
