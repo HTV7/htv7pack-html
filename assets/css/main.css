@@ -1,8 +1,15 @@
+@font-face {
+	font-family: LatoReg;
+	src: url('https://jonas.htv7.net/assets/Fonts/LatoReg.ttf');
+}
+body {
+    background-color: #eee;
+}
 header {
     width: 100%;
     height: 40px;
     background-color: #fff;
-    box-shadow: 0px 2px 20px #888888;
+    box-shadow: 0px 2px 5px #888888;
     position: fixed;
     right: 0;
     left: 0;
@@ -13,11 +20,33 @@ header nav {
     width: 100%;
     height: 100%;
 }
-nav ul li {
-    padding: 10px 20px;
-    float: left;
+nav .nav-content {
+    position: relative;
+    display: inline-block;
 }
-nav ul li a {
+.nav-btn {
+    padding: 9px 10px;
+    border: 0px;
+    font-weight: 400;
+	font-family: Sans-serif;
+	font-size: 19px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+}
+.nav-btn a {
+	text-decoration: none;
+	color: #000;
+}
+.nav-btn#active {
+    background-color: #ccc;
+}
+.nav-content .dropdown-content {
+    min-width: 120px;
     font-weight: 400;
 	font-family: Sans-serif;
 	font-size: 20px;
@@ -25,12 +54,112 @@ nav ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #000;
+    box-shadow: 2px 2px 5px #888888;
+    float: left;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+    top: 40px;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+	color: #000;
+    background-color: #f1f1f1;
+    display: block;
+}
+.nav-btn:hover {
+    background-color: #eee;
+}
+.nav-content:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+.news-feed {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+.news-feed a {
+    text-decoration: none;
+}
+.news-feed article,.news-list{
+    float: left;
+}
+.news-feed article {
+    width: 529px;
+    height: 298px;
+    border-right: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    margin: 0px;
+    background-color: #fff;
+}
+.news-feed article h3 {
+    padding: 5px;
+    margin: 0px;
+    color: #000;
+    font-weight: 500;
+	font-family: LatoReg;
+	font-size: 18px;
+	text-align: left;
+	text-decoration: none;
+}
+.news-feed article p {
+    padding: 0px 5px;
+    margin: 10px 0px;
+    color: #000;
+    font-weight: 500;
+	font-family: LatoReg;
+	font-size: 16px;
+	text-align: left;
+	text-decoration: none;
+}
+.news-feed .news-list {
+    width: 493px;
+    height: 300px;
+    margin: 0px;
+    background-color: #fff;
+}
+.news-list .news-item {
+    width: 493px;
+    height: 48px;
+    border-bottom: 2px solid #eee;
+    margin: 0px;
+    background-color: #fff;
+    float: none;
+}
+.news-item p {
+    padding: 14px 5px;
+    color: #000;
+    font-weight: 500;
+	font-family: LatoReg;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+    float: left;
+}
+.news-item .badge {
+    min-width: 16px;
+    min-height: 16px;
+    padding: 3px 3px;
+    border: 2px solid;
+    border-radius: 16px;
+    color: #fff;
+    background-color: #888;
+    font-weight: 500;
+	font-family: LatoReg;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+    float: right;
 }
 footer {
     width: 100%;
-    overflow: auto;
     background-color: #fff;
-	box-shadow: 0px -2px 20px #888888;
+    box-shadow: 0px -2px 5px #888888;
 }
 footer section {
     width: 100%;
@@ -72,6 +201,7 @@ footer section article p a {
 .wrapper {
     width: 1024px;
     margin: auto;
+    margin-bottom: 5px;
 }
 .header-pusher {
     width: 100%;
